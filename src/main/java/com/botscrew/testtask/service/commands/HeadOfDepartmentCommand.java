@@ -12,13 +12,12 @@ public class HeadOfDepartmentCommand extends AbstractCommand {
         text = "head";
         root = true;
         this.command = command;
-        next = command;
     }
 
     @Override
     public String execute(String sentence) {
         boolean isFound = sentence.contains(text);
         if (!isFound) return null;
-        return next.execute(sentence);
+        return command.execute(sentence);
     }
 }
