@@ -13,7 +13,7 @@ public class CountEmployeesDepartmentCommand extends AbstractCommand {
 
     public CountEmployeesDepartmentCommand(DepartmentRepository departmentRepository) {
         this.departmentRepository = departmentRepository;
-        text = "count of employees";
+        text = "count of employee";
         root = true;
     }
 
